@@ -1,18 +1,10 @@
 import "./App.css";
-import Greet from "./components/Greet";
-import Heading from "./components/Heading";
-import Oscar from "./components/Oscar";
-import Status from "./components/Status";
+import Container from "./components/Container";
 
 function App() {
   return (
     <div className="App">
-      <Status status="error" />
-      <Heading>Placeholder Text</Heading>
-      <Oscar>
-        <Heading>Oscar goes to Leonardo Dicpario!</Heading>
-      </Oscar>
-      <Greet name="GG" isLoggedIn={true} />
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
     </div>
   );
 }
